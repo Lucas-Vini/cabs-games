@@ -4,6 +4,7 @@ var game_over = false
 var tie = false
 var analysingGame = false
 
+//check if someone won the game
 function checkGame(i){
 	if (tictactoe[0] == i && tictactoe[1] == i && tictactoe[2] == i) {
 		displayWinner(i, "sq1", "sq2", "sq3")
@@ -34,7 +35,7 @@ function checkGame(i){
 		}
 	}
 }
-
+//Display the game result
 function displayWinner(i, sq_a, sq_b, sq_c){
 	game_over = true
 	if (i == 1){
@@ -80,6 +81,7 @@ function displayWinner(i, sq_a, sq_b, sq_c){
 
 }
 
+//mark "x" in the position choosen by the player
 function playerTurn(sq){
 	if (!game_over){
 		if (tictactoe[sq] == 0){
@@ -96,6 +98,7 @@ function playerTurn(sq){
 	}
 }
 
+//mark "o" in a random position
 function computerTurn(){
 	if (!game_over){
 		var sq = Math.floor(Math.random() * 9);
@@ -118,6 +121,7 @@ function computerTurn(){
 	}
 }
 
+//reset the game
 function newGame(){
 	tictactoe = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 	game_over = false
@@ -131,10 +135,11 @@ function newGame(){
 	analysingGame = false
 }
 
+//just wait the user analyse the game
 function analyseGame() {
 	analysingGame = true
 }
-
+//show modal to restar the game
 function bodyNewGame() {
 	if (analysingGame == true){
 		$('#exampleModalCenter').modal('show')
