@@ -68,6 +68,11 @@ body {
 	width: 70px;
 	height: 70px;
 }
+
+.icons-tictactoe {
+	font-size: 65px;
+}
+
 }
 
 .square-tl{
