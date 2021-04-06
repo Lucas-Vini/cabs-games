@@ -42,13 +42,13 @@ body {
 @media (max-width: 768px){
 
 .container-tictactoe{
-	width: 478px;
-	height: 478px;
+	width: 448px;
+	height: 448px;
 }
 
 .square-tictactoe{
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 }
 }
 
