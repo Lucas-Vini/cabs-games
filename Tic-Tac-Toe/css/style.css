@@ -52,7 +52,7 @@ body {
 }
 
 .icons-tictactoe {
-	font-size: 5px;
+	font-size: 45px;
 }
 
 }
@@ -60,17 +60,17 @@ body {
 @media (max-width: 576px){
 
 .container-tictactoe{
-	width: 238px;
-	height: 238px;
+	width: 253px;
+	height: 253px;
 }
 
 .square-tictactoe{
-	width: 70px;
-	height: 70px;
+	width: 75px;
+	height: 75px;
 }
 
 .icons-tictactoe {
-	font-size: 65px;
+	font-size: 15px;
 }
 
 }
