@@ -55,13 +55,13 @@ body {
 @media (max-width: 576px){
 
 .container-tictactoe{
-	width: 388px;
-	height: 388px;
+	width: 328px;
+	height: 328px;
 }
 
 .square-tictactoe{
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 }
 }
 
